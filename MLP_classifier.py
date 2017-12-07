@@ -219,7 +219,6 @@ def MLP_classifier():
 	a = np.array(data_shuffled[1,:].A[0])
 	ymin = min(a)
 	ymax = max(a)
-#	print xmin, ' ', xmax,' ', ymin,' ', ymax,
 	[x_b,y_b]= pylab.meshgrid(np.linspace(xmin,xmax,100),np.linspace(ymin,ymax,100))
 	z_b  = 0*np.ones(x_b.shape);
 	for x1 in range(0,x_b.shape[0]):
